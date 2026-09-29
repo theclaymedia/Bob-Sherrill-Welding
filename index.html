@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bob Sherrill Welding | Steel Fabrication and Welding in Bakersfield, CA</title>
+  <meta name="description" content="Bob Sherrill Welding has fabricated structural steel, steel plate and custom weldments in Bakersfield, California since 1977. Call (661) 322-1098 for a quote.">
+  <meta name="theme-color" content="#131313">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #131313;
+      --ink-2: #1c1d1f;
+      --ink-3: #2a2b2e;
+      --paper: #f3f0ea;
+      --paper-2: #e9e4dc;
+      --line: #cfc8bc;
+      --line-dark: #3a3b3f;
+      --text: #1a1a1a;
+      --text-muted: #5a5750;
+      --text-on-dark: #ece8e1;
+      --text-on-dark-muted: #b9b3a9;
+      --accent: #d9651e;
+      --accent-text: #9c3f0d;
+      --accent-on-dark: #f3b07a;
+      --focus: #2f6fdb;
+      --max: 1200px;
+      --gutter: clamp(16px, 4vw, 48px);
+      --head: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+      --body: "Barlow", "Helvetica Neue", Arial, sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation: none !important; transition: none !important; }
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--body);
+      font-size: 1.0625rem;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--paper);
+    }
+
+    img, video { display: block; max-width: 100%; }
+    h1, h2, h3, h4 { font-family: var(--head); line-height: 1; margin: 0; text-transform: uppercase; letter-spacing: 0.005em; }
+    p { margin: 0 0 1em; }
+    a { color: inherit; }
+
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    .on-dark :focus-visible, .dark :focus-visible { outline-color: #ffd28a; }
+
+    .visually-hidden {
+      position: absolute !important; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+
+    .skip-link {
+      position: absolute; left: 12px; top: -80px; z-index: 1000;
+      background: var(--accent); color: var(--ink); font-weight: 600;
+      padding: 12px 18px; text-decoration: none; font-family: var(--head); text-transform: uppercase; font-size: 1.125rem;
+    }
+    .skip-link:focus { top: 12px; }
+
+    .wrap { width: min(100% - 2 * var(--gutter), var(--max)); margin-inline: auto; }
+
+    /* Header */
+    .site-header {
+      position: absolute; top: 0; left: 0; right: 0; z-index: 20;
+      color: var(--text-on-dark);
+      border-bottom: 1px solid rgba(255,255,255,0.14);
+    }
+    .site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 76px; }
+    .brand { font-family: var(--head); font-weight: 700; text-transform: uppercase; font-size: 1.5rem; letter-spacing: 0.02em; text-decoration: none; line-height: 1; }
+    .brand small { display: block; font-family: var(--body); font-weight: 500; font-size: 0.72rem; letter-spacing: 0.16em; color: var(--text-on-dark-muted); margin-top: 4px; }
+
+    .nav-toggle {
+      display: none; background: none; border: 1px solid rgba(255,255,255,0.35); color: inherit;
+      font-family: var(--head); text-transform: uppercase; font-size: 1.05rem; letter-spacing: 0.06em;
+      padding: 10px 14px; cursor: pointer;
+    }
+    .nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 8px; align-items: center; }
+    .nav a { text-decoration: none; font-family: var(--head); text-transform: uppercase; font-size: 1.15rem; letter-spacing: 0.06em; padding: 10px 12px; display: inline-block; border-bottom: 2px solid transparent; }
+    .nav a:hover { border-bottom-color: var(--accent-on-dark); }
+    .nav .call { border: 1px solid rgba(255,255,255,0.45); padding: 10px 16px; margin-left: 8px; }
+    .nav .call:hover { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+
+    @media (max-width: 860px) {
+      .nav-toggle { display: inline-block; }
+      .nav { display: none; position: absolute; left: 0; right: 0; top: 76px; background: var(--ink); border-bottom: 1px solid var(--line-dark); padding: 12px var(--gutter) 20px; }
+      .nav.is-open { display: block; }
+      .nav ul { flex-direction: column; align-items: stretch; gap: 0; }
+      .nav a { display: block; padding: 14px 6px; border-bottom: 1px solid var(--line-dark); font-size: 1.35rem; }
+      .nav .call { margin: 14px 0 0; text-align: center; border: 1px solid rgba(255,255,255,0.45); }
+    }
+
+    /* Hero */
+    .hero {
+      position: relative; isolation: isolate;
+      min-height: 100vh; min-height: 100svh;
+      display: grid; place-items: center;
+      background: var(--ink); color: var(--text-on-dark);
+      overflow: hidden;
+      padding: 110px var(--gutter) 72px;
+      text-align: center;
+    }
+    .hero-media { position: absolute; inset: 0; z-index: -2; }
+    .hero-media video, .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
+    .hero::after {
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(180deg, rgba(10,10,10,0.72) 0%, rgba(10,10,10,0.5) 45%, rgba(10,10,10,0.78) 100%);
+    }
+    .hero-inner { max-width: 900px; display: flex; flex-direction: column; align-items: center; }
+    .eyebrow { font-family: var(--body); font-weight: 600; font-size: 0.85rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-on-dark); margin: 0 0 20px; }
+    .hero h1 { font-size: clamp(3.1rem, 9vw, 7rem); font-weight: 700; letter-spacing: -0.005em; max-width: 14ch; }
+    .hero h1 span { display: block; }
+    .hero p.lede { font-size: clamp(1.05rem, 1.6vw, 1.3rem); max-width: 56ch; margin: 26px auto 34px; color: var(--text-on-dark); }
+    .hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      font-family: var(--head); text-transform: uppercase; font-weight: 700; font-size: 1.2rem; letter-spacing: 0.06em;
+      padding: 15px 28px; text-decoration: none; border: 2px solid transparent; cursor: pointer; line-height: 1;
+      min-height: 52px;
+    }
+    .btn-primary { background: var(--accent); color: var(--ink); border-color: var(--accent); }
+    .btn-primary:hover { background: #e9752c; border-color: #e9752c; }
+    .btn-outline { background: transparent; color: var(--text-on-dark); border-color: rgba(255,255,255,0.6); }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+    .btn-outline-dark { background: transparent; color: var(--ink); border-color: var(--ink); }
+    .btn-outline-dark:hover { background: var(--ink); color: var(--paper); }
+
+    .video-control {
+      position: absolute; right: var(--gutter); bottom: 22px; z-index: 2;
+      background: rgba(0,0,0,0.55); color: var(--text-on-dark); border: 1px solid rgba(255,255,255,0.35);
+      font-family: var(--body); font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 10px 14px; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .video-control svg { width: 16px; height: 16px; }
+    .video-control:hover { background: rgba(0,0,0,0.8); }
+
+    /* Section basics */
+    section { padding: clamp(64px, 9vw, 120px) 0; }
+    .section-head { display: grid; grid-template-columns: minmax(0, 1fr); gap: 18px; margin-bottom: clamp(36px, 5vw, 64px); }
+    .section-head .label { font-weight: 600; font-size: 0.85rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent-text); }
+    .section-head h2 { font-size: clamp(2.4rem, 5.5vw, 4.5rem); max-width: 16ch; }
+    .section-head p { max-width: 58ch; color: var(--text-muted); font-size: 1.1rem; margin: 0; }
+    @media (min-width: 900px) {
+      .section-head { grid-template-columns: 1fr 1fr; align-items: end; }
+      .section-head p { justify-self: end; }
+    }
+
+    /* Trust strip */
+    .strip { background: var(--ink-2); color: var(--text-on-dark); padding: 26px 0; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); }
+    .strip ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 18px 32px; }
+    .strip li { font-family: var(--head); text-transform: uppercase; font-size: 1.25rem; letter-spacing: 0.04em; display: flex; align-items: center; gap: 14px; }
+    .strip li::before { content: ""; width: 10px; height: 10px; background: var(--accent); flex: none; }
+
+    /* Services */
+    .services-list { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+    .service { display: grid; grid-template-columns: 96px 1fr; gap: 20px 28px; padding: 36px 0; border-bottom: 1px solid var(--line); align-items: start; }
+    .service .icon { width: 84px; height: 84px; color: var(--accent-text); }
+    .service h3 { font-size: clamp(1.7rem, 3vw, 2.4rem); margin-bottom: 10px; }
+    .service p { margin: 0; max-width: 62ch; color: var(--text-muted); }
+    .service .num { display: none; }
+    @media (min-width: 900px) {
+      .service { grid-template-columns: 80px 110px 1fr; }
+      .service .num { display: block; font-family: var(--head); font-size: 1.4rem; color: var(--text-muted); padding-top: 8px; }
+    }
+    @media (max-width: 520px) {
+      .service { grid-template-columns: 1fr; }
+      .service .icon { width: 64px; height: 64px; }
+    }
+
+    /* About */
+    .about { background: var(--ink); color: var(--text-on-dark); }
+    .about .wrap { display: grid; gap: 40px; align-items: center; }
+    .about .big { font-family: var(--head); font-weight: 700; font-size: clamp(5rem, 16vw, 12rem); line-height: 0.9; color: var(--accent-on-dark); }
+    .about .big small { display: block; font-size: 0.22em; letter-spacing: 0.18em; color: var(--text-on-dark-muted); margin-bottom: 8px; }
+    .about h2 { font-size: clamp(2.2rem, 4.5vw, 3.6rem); margin: 22px 0 18px; }
+    .about p { color: var(--text-on-dark-muted); max-width: 56ch; font-size: 1.1rem; }
+    .about figure { margin: 0; }
+    .about figure img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; }
+    .about figcaption { font-size: 0.85rem; color: var(--text-on-dark-muted); margin-top: 10px; letter-spacing: 0.04em; }
+    @media (min-width: 900px) {
+      .about .wrap { grid-template-columns: 1.1fr 0.9fr; gap: 64px; }
+    }
+
+    /* Work */
+    .work-grid { display: grid; gap: 14px; grid-template-columns: repeat(2, 1fr); }
+    .work-grid figure { margin: 0; position: relative; display: flex; flex-direction: column; }
+    .work-grid img { width: 100%; height: auto; flex: 1; min-height: 0; object-fit: cover; aspect-ratio: 4 / 3; }
+    .work-grid figcaption { font-family: var(--head); text-transform: uppercase; letter-spacing: 0.05em; font-size: 1.05rem; padding: 10px 0 0; color: var(--text-muted); }
+    @media (min-width: 760px) {
+      .work-grid { grid-template-columns: repeat(6, 1fr); }
+      .work-grid figure:nth-child(1) { grid-column: span 4; }
+      .work-grid figure:nth-child(2) { grid-column: span 2; }
+      .work-grid figure:nth-child(3) { grid-column: span 2; }
+      .work-grid figure:nth-child(4) { grid-column: span 2; }
+      .work-grid figure:nth-child(5) { grid-column: span 2; }
+      .work-grid figure:nth-child(1) img { aspect-ratio: 16 / 9; }
+      .work-grid figure:nth-child(2) img { aspect-ratio: 8 / 9; }
+    }
+
+    /* How we work */
+    .steps { background: var(--paper-2); }
+    .steps ol { list-style: none; counter-reset: step; margin: 0; padding: 0; display: grid; gap: 28px; }
+    .steps li { counter-increment: step; border-top: 3px solid var(--ink); padding-top: 18px; }
+    .steps li::before { content: "0" counter(step); font-family: var(--head); font-size: 1.3rem; color: var(--accent-text); letter-spacing: 0.08em; display: block; margin-bottom: 8px; }
+    .steps h3 { font-size: 1.8rem; margin-bottom: 8px; }
+    .steps p { color: var(--text-muted); margin: 0; }
+    @media (min-width: 760px) { .steps ol { grid-template-columns: repeat(4, 1fr); gap: 32px; } }
+
+    /* Contact */
+    .contact .wrap { display: grid; gap: 48px; }
+    .contact-details { display: grid; gap: 30px; }
+    .detail { display: grid; grid-template-columns: 56px 1fr; gap: 18px; align-items: start; }
+    .detail .icon { width: 52px; height: 52px; color: var(--accent-text); }
+    .detail h3 { font-size: 1.35rem; margin-bottom: 4px; }
+    .detail p { margin: 0; color: var(--text-muted); }
+    .detail a { color: var(--text); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    .detail a:hover { color: var(--accent-text); }
+    .hours { display: grid; grid-template-columns: auto auto; gap: 2px 20px; margin: 0; }
+    .hours dt { font-weight: 600; }
+    .hours dd { margin: 0; color: var(--text-muted); white-space: nowrap; }
+    @media (max-width: 480px) { .hours { grid-template-columns: 1fr; gap: 0; } .hours dd { margin-bottom: 8px; } }
+
+    form { display: grid; gap: 18px; }
+    .field { display: grid; gap: 6px; }
+    .field label { font-family: var(--head); text-transform: uppercase; letter-spacing: 0.06em; font-size: 1.05rem; }
+    .field .hint { font-size: 0.9rem; color: var(--text-muted); }
+    input, select, textarea {
+      font: inherit; width: 100%; padding: 13px 14px; border: 1px solid #8f887b; background: #fff; color: var(--text); border-radius: 0;
+    }
+    input:focus, select:focus, textarea:focus { outline: 3px solid var(--focus); outline-offset: 1px; border-color: var(--ink); }
+    textarea { min-height: 150px; resize: vertical; }
+    .row-2 { display: grid; gap: 18px; }
+    @media (min-width: 640px) { .row-2 { grid-template-columns: 1fr 1fr; } }
+    .form-note { font-size: 0.92rem; color: var(--text-muted); margin: 0; }
+    .form-status { font-weight: 600; margin: 0; padding: 14px 16px; border-left: 4px solid var(--accent); background: #fff; }
+    .form-status[hidden] { display: none; }
+    .contact .section-head h2 { max-width: none; font-size: clamp(2.2rem, 4vw, 3.4rem); }
+    @media (min-width: 960px) {
+      .contact .wrap { grid-template-columns: 0.85fr 1.15fr; gap: 72px; }
+    }
+
+    /* Footer */
+    .site-footer { background: var(--ink); color: var(--text-on-dark-muted); padding: 48px 0 28px; border-top: 4px solid var(--accent); }
+    .site-footer .wrap { display: grid; gap: 28px; }
+    .site-footer .brand { color: var(--text-on-dark); }
+    .site-footer ul { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 6px 22px; }
+    .site-footer a { color: var(--text-on-dark); text-decoration: none; }
+    .site-footer a:hover { text-decoration: underline; }
+    .site-footer address { font-style: normal; line-height: 1.7; }
+    .site-footer .legal { font-size: 0.85rem; border-top: 1px solid var(--line-dark); padding-top: 18px; display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+    @media (min-width: 760px) { .site-footer .wrap { grid-template-columns: 1.2fr 1fr 1fr; } .site-footer .legal { grid-column: 1 / -1; } }
+
+    /* Cookie notice */
+    .cookie-notice {
+      position: fixed; left: 16px; bottom: 16px; z-index: 50;
+      width: min(380px, calc(100% - 32px));
+      background: var(--ink); color: var(--text-on-dark);
+      border: 1px solid var(--line-dark); border-left: 4px solid var(--accent);
+      padding: 20px 20px 18px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.35);
+      transform: translateX(-120%); transition: transform 0.45s ease;
+    }
+    .cookie-notice.is-visible { transform: none; }
+    .cookie-notice[hidden] { display: none; }
+    .cookie-notice h2 { font-size: 1.4rem; margin-bottom: 8px; }
+    .cookie-notice p { font-size: 0.95rem; color: var(--text-on-dark-muted); margin-bottom: 16px; }
+    .cookie-notice p a { color: var(--text-on-dark); }
+    .cookie-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .cookie-actions .btn { font-size: 1.05rem; padding: 11px 18px; min-height: 44px; }
+    .cookie-close { position: absolute; top: 8px; right: 8px; background: none; border: 0; color: var(--text-on-dark-muted); width: 40px; height: 40px; cursor: pointer; display: grid; place-items: center; }
+    .cookie-close:hover { color: #fff; }
+    .cookie-close svg { width: 18px; height: 18px; }
+    @media (prefers-reduced-motion: reduce) { .cookie-notice { transition: none; } }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header on-dark">
+    <div class="wrap">
+      <a class="brand" href="#top" aria-label="Bob Sherrill Welding, home">Bob Sherrill Welding<small>Bakersfield, California</small></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="nav" id="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="call" href="tel:+16613221098">(661) 322-1098</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero on-dark" id="top" aria-labelledby="hero-title">
+      <div class="hero-media" aria-hidden="true">
+        <video id="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/video/hero-poster.jpg" tabindex="-1">
+          <source src="assets/video/hero.mp4" type="video/mp4">
+        </video>
+      </div>
+      <div class="hero-inner">
+        <p class="eyebrow">Steel fabrication and welding since 1977</p>
+        <h1 id="hero-title"><span>Built right.</span><span>Welded to last.</span></h1>
+        <p class="lede">Structural steel, steel plate and custom weldments from a Bakersfield shop that has been doing this work for nearly fifty years. Bring us a drawing, a broken part or an idea.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Request a quote</a>
+          <a class="btn btn-outline" href="tel:+16613221098">Call (661) 322-1098</a>
+        </div>
+      </div>
+      <button class="video-control" id="video-toggle" type="button" aria-pressed="false">
+        <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z" fill="currentColor"/></svg>
+        <span>Pause video</span>
+      </button>
+    </section>
+
+    <div class="strip on-dark" role="region" aria-label="Highlights">
+      <div class="wrap">
+        <ul>
+          <li>Family owned since 1977</li>
+          <li>Structural and plate steel</li>
+          <li>Repairs, cutting and custom work</li>
+          <li>Serving Kern County</li>
+        </ul>
+      </div>
+    </div>
+
+    <section id="services" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="label">What we do</p>
+            <h2 id="services-title">Fabrication and welding for the job in front of you</h2>
+          </div>
+          <p>From one-off repairs to structural packages, the work is laid out, fit and welded in our shop on Fruitvale Avenue.</p>
+        </div>
+
+        <ul class="services-list">
+          <li class="service">
+            <span class="num" aria-hidden="true">01</span>
+            <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M8 22 32 12l24 10-24 10z"/>
+              <path d="M8 22v20l24 10 24-10V22"/>
+              <path d="M32 32v20"/>
+              <path d="M16 32.5 32 39"/>
+              <path d="M48 32.5 32 39" stroke-dasharray="3 3"/>
+            </svg>
+            <div>
+              <h3>Structural steel fabrication</h3>
+              <p>Beams, columns, moment frames, stairs, ladders, platforms and support steel for commercial, agricultural and industrial buildings. Fabricated to your engineer's drawings and delivered ready to set.</p>
+            </div>
+          </li>
+          <li class="service">
+            <span class="num" aria-hidden="true">02</span>
+            <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M6 18h44v28H6z"/>
+              <path d="M50 18l8 8v28H14l-8-8"/>
+              <path d="M50 46l8 8"/>
+              <circle cx="14" cy="26" r="2"/>
+              <circle cx="42" cy="26" r="2"/>
+              <circle cx="14" cy="38" r="2"/>
+              <circle cx="42" cy="38" r="2"/>
+              <path d="M24 32h8"/>
+            </svg>
+            <div>
+              <h3>Steel plate fabrication</h3>
+              <p>Base plates, gussets, brackets, tanks, hoppers and heavy plate parts cut, formed and welded to spec. Carbon steel, stainless and aluminum, in thicknesses from sheet up to heavy plate.</p>
+            </div>
+          </li>
+          <li class="service">
+            <span class="num" aria-hidden="true">03</span>
+            <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M10 54 30 34"/>
+              <path d="M26 30l8 8 10-10-8-8z"/>
+              <path d="M36 20l14-14"/>
+              <path d="M50 6l4 4"/>
+              <path d="M44 44l3 6M50 36l6 2M40 50l-1 6" />
+              <path d="M8 56l4-4"/>
+            </svg>
+            <div>
+              <h3>Welding and cutting</h3>
+              <p>MIG, TIG, stick and flux-core welding on steel, stainless and aluminum. Oxy-fuel and plasma cutting for parts, blanks and demo work. Shop work or on site around Kern County.</p>
+            </div>
+          </li>
+          <li class="service">
+            <span class="num" aria-hidden="true">04</span>
+            <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+              <path d="M40 10a10 10 0 0 0-11.8 13.7L8 44l8 8 20.3-20.2A10 10 0 0 0 52 22l-6 6-6-2-2-6z"/>
+              <path d="M12 48l4 4"/>
+              <path d="M44 42l10 10"/>
+              <path d="M48 38l8 8"/>
+            </svg>
+            <div>
+              <h3>Repairs and custom work</h3>
+              <p>Broken equipment, cracked frames, trailer and hitch repair, gates, railings, truck racks and the one-off parts nobody else wants to make. If it is metal and it is broken, bring it by.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="about on-dark" id="about" aria-labelledby="about-title">
+      <div class="wrap">
+        <div>
+          <p class="big"><small>Established</small>1977</p>
+          <h2 id="about-title">A small shop that has outlasted the big ones</h2>
+          <p>Bob Sherrill Welding has been fabricating and repairing steel out of the same corner of Bakersfield for nearly five decades. It is still a small shop, which means the person you talk to on the phone is the person who lays out, fits and welds your job.</p>
+          <p>We work with contractors, farmers, oilfield service companies and homeowners who need something built correctly the first time. No sales staff, no runaround, just straight answers and clean welds.</p>
+          <a class="btn btn-primary" href="#contact">Talk to the shop</a>
+        </div>
+        <figure>
+          <img src="assets/img/welder-workshop.webp" width="1200" height="1800" alt="A welder in a dark shop leaning over a steel part as bright sparks spray outward from the weld." loading="lazy">
+          <figcaption>Shop work, Fruitvale Avenue, Bakersfield</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="work-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="label">Recent work</p>
+            <h2 id="work-title">Straight fits and clean beads</h2>
+          </div>
+          <p>A sample of the kind of work that leaves the shop. Ask us about a project like yours and we will walk you through how we would approach it.</p>
+        </div>
+        <div class="work-grid">
+          <figure>
+            <img src="assets/img/structural-weld.webp" width="1600" height="1067" alt="Rectangular steel tubing welded at a right angle on a perforated fixture table, with fresh weld beads at the joint." loading="lazy">
+            <figcaption>Tube frame fit-up on the fixture table</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/gloved-hands-welding.webp" width="1400" height="1400" alt="Close view of gloved hands guiding a MIG torch across a steel plate under blue-green light." loading="lazy">
+            <figcaption>MIG welding a plate assembly</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/welded-framing.webp" width="1600" height="1067" alt="Close-up of a finished corner weld joining two pieces of square steel tubing." loading="lazy">
+            <figcaption>Finished corner joint</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/img/grinder-sparks.webp" width="1600" height="1067" alt="A worker in gloves cutting a steel sheet with an angle grinder, orange sparks flying across the bench." loading="lazy">
+            <figcaption>Cutting and prep</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/video/hero-poster.jpg" width="1920" height="1080" alt="A welder in a red auto-darkening helmet works at a bench as sparks scatter from the arc." loading="lazy">
+            <figcaption>Bench welding</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps" aria-labelledby="steps-title">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <p class="label">How it works</p>
+            <h2 id="steps-title">Four steps, no surprises</h2>
+          </div>
+        </div>
+        <ol>
+          <li>
+            <h3>Tell us what you need</h3>
+            <p>Call, stop by the shop or send the form below. Drawings, photos and rough sketches all help.</p>
+          </li>
+          <li>
+            <h3>Get a straight quote</h3>
+            <p>We look at the job, ask the questions that matter and give you a price and a realistic timeline.</p>
+          </li>
+          <li>
+            <h3>We build it</h3>
+            <p>Material is cut, fit and welded in our shop. You are welcome to come check on it as it comes together.</p>
+          </li>
+          <li>
+            <h3>Pick up or delivery</h3>
+            <p>Pick it up at the shop or we can deliver and install locally, depending on the job.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div>
+          <div class="section-head" style="margin-bottom: 32px;">
+            <div>
+              <p class="label">Get in touch</p>
+              <h2 id="contact-title">Call the shop or send the details</h2>
+            </div>
+          </div>
+          <div class="contact-details">
+            <div class="detail">
+              <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M22 8h-6a6 6 0 0 0-6 6c0 24 20 44 44 44a6 6 0 0 0 6-6v-6l-12-6-6 6C34 42 22 30 18 22l6-6z"/>
+              </svg>
+              <div>
+                <h3>Phone</h3>
+                <p><a href="tel:+16613221098">(661) 322-1098</a></p>
+              </div>
+            </div>
+            <div class="detail">
+              <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <path d="M32 58s18-16 18-30a18 18 0 0 0-36 0c0 14 18 30 18 30z"/>
+                <circle cx="32" cy="28" r="7"/>
+              </svg>
+              <div>
+                <h3>Shop</h3>
+                <p><a href="https://www.google.com/maps/search/?api=1&query=2349+Fruitvale+Ave+%237+Bakersfield+CA+93308" target="_blank" rel="noopener">2349 Fruitvale Ave #7<br>Bakersfield, CA 93308</a></p>
+              </div>
+            </div>
+            <div class="detail">
+              <svg class="icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+                <circle cx="32" cy="32" r="24"/>
+                <path d="M32 16v16l10 6"/>
+              </svg>
+              <div>
+                <h3>Hours</h3>
+                <dl class="hours">
+                  <dt>Monday to Friday</dt><dd>8:00 AM to 4:30 PM</dd>
+                  <dt>Saturday and Sunday</dt><dd>Closed</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="quote-form" novalidate aria-describedby="form-help">
+          <p id="form-help" class="form-note">Required fields are marked with an asterisk (*). We usually respond within one business day.</p>
+          <div class="row-2">
+            <div class="field">
+              <label for="name">Name *</label>
+              <input id="name" name="name" type="text" autocomplete="name" required aria-required="true">
+            </div>
+            <div class="field">
+              <label for="phone">Phone *</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required aria-required="true">
+            </div>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="type">What do you need?</label>
+            <select id="type" name="type">
+              <option value="">Choose one</option>
+              <option>Structural steel fabrication</option>
+              <option>Steel plate fabrication</option>
+              <option>Welding or cutting</option>
+              <option>Repair</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Project details *</label>
+            <span class="hint" id="message-hint">Sizes, material, quantity and when you need it.</span>
+            <textarea id="message" name="message" required aria-required="true" aria-describedby="message-hint"></textarea>
+          </div>
+          <p class="form-status" id="form-status" role="status" aria-live="polite" hidden></p>
+          <div>
+            <button class="btn btn-primary" type="submit">Send request</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="wrap">
+      <div>
+        <a class="brand" href="#top">Bob Sherrill Welding<small>Steel fabrication and welding since 1977</small></a>
+      </div>
+      <address>
+        2349 Fruitvale Ave #7<br>
+        Bakersfield, CA 93308<br>
+        <a href="tel:+16613221098">(661) 322-1098</a>
+      </address>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" id="cookie-settings-link">Cookie settings</a></li>
+        </ul>
+      </nav>
+      <div class="legal">
+        <span>&copy; <span id="year">2026</span> Bob Sherrill Welding. All rights reserved.</span>
+        <span>Monday to Friday, 8:00 AM to 4:30 PM</span>
+      </div>
+    </div>
+  </footer>
+
+  <aside class="cookie-notice on-dark" id="cookie-notice" role="region" aria-labelledby="cookie-title" hidden>
+    <button class="cookie-close" type="button" id="cookie-close" aria-label="Close cookie notice">
+      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M3 3l12 12M15 3 3 15"/></svg>
+    </button>
+    <h2 id="cookie-title">Cookies on this site</h2>
+    <p>We use a small number of cookies to keep the site working and to see which pages people visit. You can accept or decline the optional ones.</p>
+    <div class="cookie-actions">
+      <button class="btn btn-primary" type="button" id="cookie-accept">Accept</button>
+      <button class="btn btn-outline" type="button" id="cookie-decline">Decline</button>
+    </div>
+  </aside>
+
+  <script>
+    (function () {
+      var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      /* Navigation toggle */
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.getElementById('site-nav');
+      if (toggle && nav) {
+        toggle.addEventListener('click', function () {
+          var open = nav.classList.toggle('is-open');
+          toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+          toggle.textContent = open ? 'Close' : 'Menu';
+        });
+        nav.addEventListener('click', function (e) {
+          if (e.target.tagName === 'A' && nav.classList.contains('is-open')) {
+            nav.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = 'Menu';
+          }
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && nav.classList.contains('is-open')) {
+            nav.classList.remove('is-open');
+            toggle.setAttribute('aria-expanded', 'false');
+            toggle.textContent = 'Menu';
+            toggle.focus();
+          }
+        });
+      }
+
+      /* Hero video: respect reduced motion, provide a pause control */
+      var video = document.getElementById('hero-video');
+      var videoBtn = document.getElementById('video-toggle');
+      var pauseIcon = '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M3 2h3.5v12H3zM9.5 2H13v12H9.5z" fill="currentColor"/></svg>';
+      var playIcon = '<svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M4 2l10 6-10 6z" fill="currentColor"/></svg>';
+      function setVideoState(playing) {
+        videoBtn.innerHTML = (playing ? pauseIcon : playIcon) + '<span>' + (playing ? 'Pause video' : 'Play video') + '</span>';
+        videoBtn.setAttribute('aria-pressed', playing ? 'false' : 'true');
+      }
+      if (video && videoBtn) {
+        if (reduceMotion) {
+          video.removeAttribute('autoplay');
+          video.pause();
+          setVideoState(false);
+        } else {
+          setVideoState(true);
+        }
+        videoBtn.addEventListener('click', function () {
+          if (video.paused) { video.play(); setVideoState(true); }
+          else { video.pause(); setVideoState(false); }
+        });
+      }
+
+      /* Quote form (mockup only, no backend) */
+      var form = document.getElementById('quote-form');
+      var status = document.getElementById('form-status');
+      if (form && status) {
+        form.addEventListener('submit', function (e) {
+          e.preventDefault();
+          var firstInvalid = null;
+          Array.prototype.forEach.call(form.querySelectorAll('[required]'), function (field) {
+            var bad = !field.value.trim();
+            field.setAttribute('aria-invalid', bad ? 'true' : 'false');
+            if (bad && !firstInvalid) firstInvalid = field;
+          });
+          status.hidden = false;
+          if (firstInvalid) {
+            status.textContent = 'Please fill in the required fields before sending.';
+            firstInvalid.focus();
+            return;
+          }
+          status.textContent = 'Thanks. Your request has been noted. This is a design mockup, so nothing was actually sent yet.';
+          form.reset();
+        });
+      }
+
+      /* Cookie notice */
+      var notice = document.getElementById('cookie-notice');
+      var KEY = 'bsw-cookie-choice';
+      function readChoice() { try { return localStorage.getItem(KEY); } catch (err) { return null; } }
+      function saveChoice(v) { try { localStorage.setItem(KEY, v); } catch (err) {} }
+      function showNotice() {
+        notice.hidden = false;
+        requestAnimationFrame(function () { notice.classList.add('is-visible'); });
+      }
+      function hideNotice() {
+        notice.classList.remove('is-visible');
+        var done = function () { notice.hidden = true; };
+        if (reduceMotion) done(); else setTimeout(done, 450);
+      }
+      if (notice) {
+        if (!readChoice()) setTimeout(showNotice, 1200);
+        document.getElementById('cookie-accept').addEventListener('click', function () { saveChoice('accepted'); hideNotice(); });
+        document.getElementById('cookie-decline').addEventListener('click', function () { saveChoice('declined'); hideNotice(); });
+        document.getElementById('cookie-close').addEventListener('click', hideNotice);
+        document.addEventListener('keydown', function (e) {
+          if (e.key === 'Escape' && !notice.hidden && notice.contains(document.activeElement)) hideNotice();
+        });
+        var settingsLink = document.getElementById('cookie-settings-link');
+        if (settingsLink) settingsLink.addEventListener('click', function (e) {
+          e.preventDefault();
+          showNotice();
+          document.getElementById('cookie-accept').focus();
+        });
+      }
+
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>

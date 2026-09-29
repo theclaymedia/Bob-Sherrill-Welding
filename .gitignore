@@ -1,0 +1,9 @@
+# macOS
+.DS_Store
+
+# Original full-resolution licensed photos (kept locally, web copies live in assets/img)
+assets/*.jpg
+assets/*.jpeg
+assets/*.png
+assets/*.mov
+assets/*.mp4
